@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Requirements Guide - Real Estate Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #921914;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .alert strong {
+            color: #856404;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #921914;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-card {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #921914 0%, #6b0f0c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .image-info {
+            padding: 15px;
+            background: #f9f9f9;
+        }
+
+        .image-info h3 {
+            color: #921914;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .image-info .filename {
+            color: #007bff;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .image-info .dimensions {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .image-info .usage {
+            color: #666;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .tips {
+            background: #e7f3ff;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .tips h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .tips ul {
+            margin-left: 20px;
+        }
+
+        .tips li {
+            margin-bottom: 8px;
+        }
+
+        .resources {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .resources h3 {
+            color: #0284c7;
+            margin-bottom: 15px;
+        }
+
+        .resources a {
+            color: #0284c7;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #921914;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .checklist {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        .checklist h3 {
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        .checklist label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .checklist label:hover {
+            background: rgba(34, 197, 94, 0.1);
+        }
+
+        .checklist input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Image Requirements Guide</h1>
+        <p class="subtitle">Complete visual reference for your real estate project website</p>
+
+        <div class="alert">
+            <strong>Important:</strong> You need a total of <strong>13 images</strong> to complete your website. This guide shows exactly what you need and where each image will be used.
+        </div>
+
+        <!-- Hero Section -->
+        <div class="section">
+            <h2>1. Hero Section (1 image)</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">HERO</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Hero Background</h3>
+                        <div class="filename">hero-bg.jpg</div>
+                        <div class="dimensions">📐 Recommended: 1920 x 1080px (or larger)</div>
+                        <div class="dimensions">💾 Max size: 500KB (after compression)</div>
+                        <div class="usage">Used as the main background image for your homepage banner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section">
+            <h2>2. About Section (1 image)</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">ABOUT</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>About Image</h3>
+                        <div class="filename">about-1.jpg</div>
+                        <div class="dimensions">📐 Recommended: 800 x 600px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Showcases project overview or architectural rendering</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="section">
+            <h2>3. Vision Section (1 image)</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">VISION</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Vision Image</h3>
+                        <div class="filename">vision-1.jpg</div>
+                        <div class="dimensions">📐 Recommended: 800 x 600px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Represents your project's vision and future goals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="section">
+            <h2>4. Gallery Section (5 images)</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">GALLERY 1</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Gallery Image 1</h3>
+                        <div class="filename">gallery-1.jpg</div>
+                        <div class="dimensions">📐 Recommended: 1200 x 800px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Exterior view or main facade</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder">GALLERY 2</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Gallery Image 2</h3>
+                        <div class="filename">gallery-2.jpg</div>
+                        <div class="dimensions">📐 Recommended: 1200 x 800px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Interior spaces or living areas</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder">GALLERY 3</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Gallery Image 3</h3>
+                        <div class="filename">gallery-3.jpg</div>
+                        <div class="dimensions">📐 Recommended: 1200 x 800px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Amenities or facilities</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder">GALLERY 4</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Gallery Image 4</h3>
+                        <div class="filename">gallery-4.jpg</div>
+                        <div class="dimensions">📐 Recommended: 1200 x 800px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Landscaping or outdoor areas</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder">GALLERY 5</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Gallery Image 5</h3>
+                        <div class="filename">gallery-5.jpg</div>
+                        <div class="dimensions">📐 Recommended: 1200 x 800px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Night view or architectural details</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activities Section -->
+        <div class="section">
+            <h2>5. Activities Section (3 images)</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-placeholder">ACTIVITY 1</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Activity Image 1</h3>
+                        <div class="filename">activity-1.jpg</div>
+                        <div class="dimensions">📐 Recommended: 800 x 600px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Residential development showcase</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder">ACTIVITY 2</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Activity Image 2</h3>
+                        <div class="filename">activity-2.jpg</div>
+                        <div class="dimensions">📐 Recommended: 800 x 600px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Commercial spaces or retail areas</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-placeholder">ACTIVITY 3</div>
+                    <div class="image-info">
+                        <span class="badge">Required</span>
+                        <h3>Activity Image 3</h3>
+                        <div class="filename">activity-3.jpg</div>
+                        <div class="dimensions">📐 Recommended: 800 x 600px</div>
+                        <div class="dimensions">💾 Max size: 300KB</div>
+                        <div class="usage">Property management or services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips">
+            <h3>💡 Pro Tips for Image Selection</h3>
+            <ul>
+                <li><strong>Quality First:</strong> Use professional, high-resolution photographs</li>
+                <li><strong>Consistency:</strong> Maintain similar lighting and style across all images</li>
+                <li><strong>Aspect Ratios:</strong> Try to keep consistent ratios within each section</li>
+                <li><strong>Compression:</strong> Always compress images before uploading (use TinyPNG or ImageOptim)</li>
+                <li><strong>Format:</strong> JPG for photos, PNG for graphics with transparency</li>
+                <li><strong>Naming:</strong> Use lowercase, hyphens instead of spaces (e.g., exterior-view.jpg)</li>
+                <li><strong>Backup:</strong> Keep original high-resolution versions in a separate folder</li>
+            </ul>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="resources">
+            <h3>🔗 Free Stock Image Resources</h3>
+            <p style="margin-bottom: 15px;">Need placeholder images while waiting for professional photos?</p>
+            <a href="https://unsplash.com/s/photos/real-estate" target="_blank">→ Unsplash - Real Estate Photos</a>
+            <a href="https://www.pexels.com/search/architecture/" target="_blank">→ Pexels - Architecture Photos</a>
+            <a href="https://pixabay.com/images/search/building/" target="_blank">→ Pixabay - Building Photos</a>
+            <a href="https://tinypng.com/" target="_blank">→ TinyPNG - Image Compression Tool</a>
+            <a href="https://imageoptim.com/" target="_blank">→ ImageOptim - Mac Image Optimizer</a>
+            <a href="https://squoosh.app/" target="_blank">→ Squoosh - Web-based Image Compressor</a>
+        </div>
+
+        <!-- Checklist Section -->
+        <div class="checklist">
+            <h3>✅ Image Preparation Checklist</h3>
+            <label><input type="checkbox"> Downloaded or captured all 13 required images</label>
+            <label><input type="checkbox"> Images are high quality and professional</label>
+            <label><input type="checkbox"> Compressed images to reduce file size</label>
+            <label><input type="checkbox"> Renamed files according to specifications</label>
+            <label><input type="checkbox"> Checked image dimensions match recommendations</label>
+            <label><input type="checkbox"> Placed all images in the /images/ folder</label>
+            <label><input type="checkbox"> Tested website with all images loaded</label>
+            <label><input type="checkbox"> Images look good on mobile devices</label>
+            <label><input type="checkbox"> Created backups of original high-res images</label>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: #f9f9f9; border-radius: 8px; text-align: center;">
+            <p style="color: #666; margin-bottom: 10px;">Once you have all images ready:</p>
+            <p style="font-size: 1.2rem; color: #921914; font-weight: bold;">Place them in the <code style="background: #fff; padding: 4px 8px; border-radius: 4px;">images/</code> folder and open <code style="background: #fff; padding: 4px 8px; border-radius: 4px;">index.html</code></p>
+        </div>
+    </div>
+</body>
+</html>

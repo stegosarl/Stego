@@ -1,0 +1,92 @@
+PLACEHOLDER IMAGES GUIDE
+========================
+
+This folder should contain the following images for your real estate project website.
+Replace these placeholder references with your actual project images.
+
+REQUIRED IMAGES:
+----------------
+
+1. Hero Section:
+   - hero-bg.jpg (1920x1080px or larger) - Main hero background image
+
+2. About Section:
+   - about-1.jpg (800x600px) - Project overview image
+
+3. Vision Section:
+   - vision-1.jpg (800x600px) - Vision/mission image
+
+4. Gallery Section:
+   - gallery-1.jpg (1200x800px) - Gallery image 1
+   - gallery-2.jpg (1200x800px) - Gallery image 2
+   - gallery-3.jpg (1200x800px) - Gallery image 3
+   - gallery-4.jpg (1200x800px) - Gallery image 4
+   - gallery-5.jpg (1200x800px) - Gallery image 5
+   (You can add more gallery images by following the naming pattern)
+
+5. Activities Section:
+   - activity-1.jpg (800x600px) - Activity image 1
+   - activity-2.jpg (800x600px) - Activity image 2
+   - activity-3.jpg (800x600px) - Activity image 3
+
+IMAGE GUIDELINES:
+-----------------
+
+File Formats:
+- Preferred: JPG for photos, PNG for images with transparency
+- Consider WebP format for better compression (modern browsers)
+
+Optimization:
+- Compress images before uploading (use TinyPNG, ImageOptim, or similar)
+- Target file sizes: Hero (500KB max), Other images (300KB max)
+
+Dimensions:
+- Maintain aspect ratios for best display
+- Use higher resolution images for better quality on retina displays
+- The website is responsive and will scale images appropriately
+
+Naming Convention:
+- Use lowercase letters
+- Use hyphens (-) instead of spaces
+- Be descriptive: exterior-view.jpg, interior-lobby.jpg, etc.
+
+TEMPORARY PLACEHOLDERS:
+-----------------------
+
+Until you add your real images, you can use placeholder services:
+
+1. Create placeholder images at: https://placehold.co/
+   Example URLs to save as images:
+   - https://placehold.co/1920x1080/921914/FFFFFF/png?text=Hero+Background
+   - https://placehold.co/800x600/A79D84/FFFFFF/png?text=About+Image
+   - https://placehold.co/1200x800/6EC1E4/FFFFFF/png?text=Gallery+Image
+
+2. Use Unsplash for free high-quality photos:
+   - https://unsplash.com/s/photos/real-estate
+   - https://unsplash.com/s/photos/architecture
+   - https://unsplash.com/s/photos/modern-building
+
+3. Use Pexels for free stock photos:
+   - https://www.pexels.com/search/real%20estate/
+   - https://www.pexels.com/search/architecture/
+
+QUICK START:
+------------
+
+To get your website running quickly:
+
+1. Download 13 images total (sizes mentioned above)
+2. Rename them according to the list above
+3. Place them in this images/ folder
+4. Open index.html in your browser
+5. Your website will display with your images!
+
+DYNAMIC IMAGE UPDATES:
+---------------------
+
+You can also update images programmatically using JavaScript:
+See the README.md file for detailed instructions on using the JavaScript API.
+
+---
+
+For more information, please refer to the main README.md file in the project root.
